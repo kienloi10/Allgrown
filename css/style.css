@@ -8,7 +8,8 @@
 }
 body {
 	width: 1900px;
-	font-family: "游ゴシック", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+	font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", serif;
+
 
 }
 .container{
@@ -158,7 +159,7 @@ body {
 		background-color: #fcd000;
 		width: 350px;
 		height: 55px;
-		margin: 75px 0px 0px 20px;
+		margin: 38px 0px 0px 20px;
 	}
 	/*.service .service-about .fas {
 		padding-left: 2px;
@@ -278,7 +279,7 @@ body {
 			}
 			.news .news-list .list .label{
 				width: 300px;
-			    margin-left: 30px;
+			    margin-left: 20px;
 			    border-radius: 20px;
 			    
 			    background-color: #fcd000;
@@ -329,16 +330,18 @@ body {
 		padding-top: 40px;
 		width: 557px;
 		height: 420px;
+		position:absolute;
 	}
 	.company .right{
 		background-color: #eeeeee;
 		margin-top: 40px;
 		margin-right: 400px;
+		/*margin-left: 400px;*/
 	}
 	.company .right .line1{
 		border: 0.5px;
 		border-style: solid;
-		margin-left: 45px;
+		margin-left: 250px;
 		margin-top: 47px;
 		width: 80px;
 		font-size: 15px;
@@ -346,18 +349,18 @@ body {
 	}
 	.company .right .line2{
 		margin-top: 22px;
-		margin-left: 45px;
+		margin-left: 250px;
 		font-size: 24px;
 
 	}
 	.company .right .line3{
-		margin-left: 45px;
+		margin-left: 250px;
 		font-size: 14px;
 		margin-top: 20px;
 		width: 500px;
 	}
 	.company .right .button{
-		margin-left: 45px;
+		margin-left: 250px;
 		background-color: #fcd000;
 		margin-top: 50px;
 		height: 60px;
@@ -570,4 +573,27 @@ footer {
 		width: 280px;
 		padding-top: 20px; 
 	}
+/*Mobile*/
+@media only screen and (max-width: 768px ){
+	
+	body {
+		width: 950px;
+	}
+	.container .header-text{
+		display: none;
+	}
+		.container .header-info img{
+			/*width: 117,5px;*/
+			height: 50%;
+			padding-left:50px;
 
+		}
+		.container .header-info .fa-bars{
+			display: inline;
+			padding-left: 300px;
+			padding-top: 40px;
+		}
+		.container .header-info .menu{
+			display: none;
+		}
+}

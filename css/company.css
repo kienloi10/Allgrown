@@ -39,6 +39,9 @@ body {
 			float: left;
 			height: 100%;
 		}
+		.container .header-info .fa-bar{
+			display: none;
+		}
 		.container .header-info .menu{
 			display: flex;
 			margin-left: 170px;
@@ -131,26 +134,83 @@ body {
 		letter-spacing: 2px;
 	}
 	.maincontent .content{
-		margin-left:290px; 
-		margin-top:100px;
-		text-align: center;
-		letter-spacing: 1px;
+		margin-left:600px; 
+		margin-top:110px;
+		/*text-align: center;*/
+		letter-spacing: 2px;
 		position: absolute;
+		width: 800px;
 	}
+		.maincontent .content p {
+			text-align: center;
+		}
+
+	.maincontent .blocks{
+		display: flex;
+		margin-top: 300px;
+		margin-left: 395px;
+		position: relative;
+		width: 380px;
+
+	}	
+		.maincontent .block{
+			width: 380px;
+			display: table-cell;
 
 
+		}
+			.maincontent .block img{
+				z-index: 1;
+				position: absolute;
+				width: 350px;
+				height: 270px;
+				
+			}
+			.maincontent .block .text{
+				z-index: 3;
+				position: relative;				
+				width: 5000px;
+				margin-left: 90px;
+				margin-top: 115px;
+				color: white;
+				font-size: 20px;
 
+			}
+				.maincontent .block .text .line2{
+					margin-left: -10px;
+				}
+			.maincontent .block .text-block2{
+				z-index: 3;
+				position: relative;				
+				width: 5000px;
+				margin-left: 90px;
+				margin-top: 130px;
+				color: white;
+				font-size: 20px;
+
+			}
+			.maincontent .block .text-block3{
+				z-index: 3;
+				position: relative;				
+				width: 5000px;
+				margin-left: 155px;
+				margin-top: 130px;
+				color: white;
+				font-size: 20px;
+
+			}
 
 
 .contact{
-	padding-top: 970px;
+
+	margin-top: 1305px;
 	position:absolute;
 	font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", serif;
 }
 	.contact img{
 		z-index: 1;
 		position:absolute;
-
+		width: 1900px;
 	}
 	.contact .line{
 		z-index: 2;
@@ -244,7 +304,7 @@ body {
 			}
 	.footer-upper{
 		display: flex;
-		padding-top: 3400px;
+		padding-top: 1750px;
 	}
 		.footer-upper img{
 			display: inline-block;
@@ -258,7 +318,7 @@ body {
 			margin-left: 70px;
 			font-size: 15px;
 		}
-	.line{
+	.footer .line{
 		width: 1110px;
 
 		margin-top: 48px;
@@ -312,3 +372,240 @@ footer {
 		padding-top: 20px; 
 	}
 
+
+
+/*Mobile*/
+@media only screen and (max-width: 768px ){
+	
+	body {
+		width: 950px;
+	}
+	.container .header-text{
+		display: none;
+	}
+		.container .header-info img{
+			/*width: 117,5px;*/
+			height: 50%;
+			padding-left:50px;
+
+		}
+		.container .header-info .fa-bars{
+			display: inline;
+			padding-left: 300px;
+			padding-top: 40px;
+		}
+		.container .header-info .menu{
+			display: none;
+		}
+	.banner{
+		z-index: 1;
+		position: absolute;
+		/*width: 950px;*/
+		height: 270px;
+		width: 100%;
+	}
+		.banner img{
+			width: 100%;
+			z-index: 1;
+			position: absolute;
+			/*height: 215px;*/
+			filter:brightness(70%);
+		}
+		.banner .company{			
+			/*width: 100%;*/
+			height: 25px;		
+			margin-left:30%; 
+			margin-top:160px;			
+		}
+		.banner .text{
+			margin-left:250px; 
+			margin-top:225px;
+			width: 100%;			
+		}
+
+	.breakcrumb{
+		padding-top: 430px;
+		height: 35px;
+		width: 100%;
+		padding-right: 0px;
+	}
+	.breakcrumb .home{
+		margin-left: 197.5px;
+		width: 100%;
+	}
+
+	.maincontent .header{
+		margin-left:200px; 
+		font-size: 17.5px;
+		width: 100%;
+	}
+	.maincontent .eng{
+		margin-left:220px; 
+		font-size: 12.5px;
+		width: 100%;
+	}
+	.maincontent .content{
+		margin-left:100px; 
+		/*width: 400px;*/
+		width: 500px;
+
+	}
+		.maincontent .content p {
+			text-align: left;
+		}
+
+	.maincontent .blocks{
+		margin-top: 300px;
+		margin-left: 100px;
+		position: relative;
+		width: 380px;	
+		display: grid;
+	}	
+		.maincontent .block{
+			padding-top: 100px;
+			margin-top: 100px; 
+			margin-left:10px;
+		}
+			.maincontent .block img{
+				z-index: 1;
+				position: absolute;
+				width: 350px;
+				height: 270px;
+				
+			}
+
+	.contact{
+		padding-top: 900px;
+	}
+		.contact img{
+			z-index: 1;
+			position:absolute;
+			width: 768px;
+			height: 420px;
+		}
+		.contact .line{
+			z-index: 2;
+			position:relative;
+			color: white;
+			font-size: 30px;
+			margin-top: 10px;
+			margin-left: 190px;
+			font-weight: bold;
+			text-shadow: 3px 3px 2px #222222;
+
+		}
+	.contact .block{
+		z-index: 2;
+		position: absolute;
+	}
+		.contact .block .block1{
+			z-index: 3;
+			position: absolute;
+			width: 350px;
+			height: 73px;
+			background-color: black;
+			opacity: 0.5;
+			text-align: center;
+			margin-left: 170px;
+			margin-top: 20px;
+			border: 2px  solid white;
+		}
+			.contact .block .block1 .info{
+				z-index: 4;
+				position: absolute;
+				color: white;
+				font-size: 12px;
+				margin-top: 12px; 
+			}
+			
+			.contact .block .block1 .call{
+				z-index: 4;
+				position: absolute;
+				color: white;
+				font-size: 20px;
+				margin-top: 35px;
+				letter-spacing: 3px; 
+			}
+		.contact .block .block2{
+			z-index: 3;
+			position: absolute;
+			width: 350px;
+			height: 73px;
+			background-color: black;
+			opacity: 0.5;
+			text-align: center;
+			margin-left: 170px;
+			margin-top: 120px;
+			border: 2px  solid white;
+		}
+			.contact .block .block2 .info{
+				z-index: 4;
+				position: absolute;
+				color: white;
+				font-size: 12px;
+				margin-top: 12px; 
+			}
+			
+			.contact .block .block2 .call{
+				z-index: 4;
+				position: absolute;
+				color: white;
+				font-size: 20px;
+				margin-top: 35px;
+				letter-spacing: 3px; 
+			}
+		.contact .block .block3{
+			z-index: 3;
+			position: absolute;
+			width: 350px;
+			height: 73px;
+			background-color: #82141a;
+			text-align: center;
+			margin-left: 170px;
+			margin-top: 220px;
+			
+		}	
+			.contact .block .block3 .info{
+				z-index: 4;
+				position: absolute;
+				color: white;
+				font-size: 20px;
+				margin-top: 20px; 
+				letter-spacing: 5px; 
+			}
+	.footer{
+		padding-top: 2700px;
+	}
+	.footer-upper{
+		display: inline;
+		padding-top: 700px;
+		margin-top: 2000px;
+	}
+		.footer-upper img{
+			display: inline-block;
+			
+			padding-left: 175px;
+			width: 235px;
+			float: left;
+			height: 100%;
+		}	
+		.footer-upper .text{
+			margin-left: 100px;
+			font-size: 15px;
+			margin-top: 90px;
+		}
+	.footer .line{
+		display: none;
+	}	
+.footer-mid{
+	display: none;
+}
+	.col-last{
+		display: none;
+	}
+		
+footer {
+    width: 768px;
+}
+
+}
